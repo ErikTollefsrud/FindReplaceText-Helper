@@ -1,0 +1,1 @@
+# FindReplaceText-Helper
