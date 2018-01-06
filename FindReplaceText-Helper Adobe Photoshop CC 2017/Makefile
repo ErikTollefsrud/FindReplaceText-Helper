@@ -5,3 +5,13 @@ all: FindReplaceText-Helper-PsCC2017-Droplet.applescript
 	rm -R -f build/FindReplaceText-Helper-PsCC2017.app
 	# Compile applescript to app and place into build folder.
 	osacompile -o build/FindReplaceText-Helper-PsCC2017.app FindReplaceText-Helper-PsCC2017-Droplet.applescript
+setup: PSTestDocumentsSetup.applescript
+	# Remove old Photoshop files
+	rm -f FindReplaceTestDoc*
+	# Run setup script
+	osascript PSTestDocumentsSetup.applescript
+clean: 
+	# Remove Photoshop test files
+	rm -f FindReplaceTestDoc*
+	# Remove build folder and contents
+	rm -R -f build
