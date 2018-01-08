@@ -72,7 +72,6 @@ end searchStringDialog
 on totalCountForString(aString)
 	set total to 0
 	tell application "Adobe Photoshop CC 2017"
-		-- TESTING: I think clearing out the layersContainingStringList each time should fix the issue....
 		set layersContainingStringList to {}
 		repeat with aLayer in layerList
 			try
