@@ -71,12 +71,3 @@ on replace_text(this_text, search_string, replacement_string)
 	set AppleScript's text item delimiters to prevTIDs
 	return this_text
 end replace_text
-
-(*
-## logs the contents of the text objects.
-## Also sets each text object to a certain string...
-
-set theText to aLayer's text object's contents
-log theText
-set aLayer's text object's contents to "Look what I just did!"
-*)
